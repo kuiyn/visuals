@@ -1,5 +1,3 @@
---Vote revealer by Cheeseot, improved upon & ported to V5 by Dracer
---汉化作者 An  QQ 2926669800
 --实际上V5自带投票显示 在 Misc--Enhancement--Vote Revealer里
 local activeVotes = {};
 local font = draw.CreateFont('Arial', 14, 14);
@@ -18,8 +16,7 @@ local TP = gui.Groupbox(g_Group, "投票显示", 20, 20, 240, 200);
 local g_BroadcastMode = gui.Combobox(TP, "msc_voterevealer_broadcast", "投票发送模式", "关闭", "发送团队频道", "发送全体频道", "发送到控制台")
 local g_Draw = gui.Checkbox(TP, "msc_voterevealer_draw", "显示其他人发起的投票", false)
 local g_DrawVotes = gui.Checkbox(TP, "msc_voterevealer_drawvotes", "显示其他人的选票", false)
-local tx = gui.Text(TP, "  投票显示免费版 By An")----可删除
-local tx = gui.Text(TP, "  QQ 2926669800")----可删除
+
 
 g_Draw:SetValue(true)
 g_DrawVotes:SetValue(true)
@@ -325,4 +322,4 @@ local function getVoteEnd(um)
       end
       callbacks.Register("Draw", reset)
 
--- Vote revealer by Cheeseot, improved upon & ported to V5 by Dracer
+
